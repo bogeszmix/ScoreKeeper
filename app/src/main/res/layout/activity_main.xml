@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/football_background"
+    tools:context="hu.bognaroliver.scorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#b0b7b7b7"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Team A"
+                android:textSize="18sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/score_A"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneScore_A"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="32dp"
+                        android:background="#f5f5f5"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"
+                        android:text="+1 Goal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:onClick="addOneFoul_A"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="12dp"
+                            android:background="#058900"
+                            android:textColor="#eee"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"
+                            android:text="+1 Foul"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/score_foul_A"
+                            android:layout_marginRight="12dp"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:onClick="addOneThrow_A"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="12dp"
+                            android:background="#058900"
+                            android:textColor="#eee"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"
+                            android:text="+1 Throw"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/score_throw_A"
+                            android:layout_marginRight="12dp"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:onClick="addOnePenalty_A"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="12dp"
+                            android:background="#058900"
+                            android:textColor="#eee"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"
+                            android:text="+1 Penalty"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/score_penalty_A"
+                            android:layout_marginRight="12dp"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Team B"
+                android:textSize="18sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/score_B"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOneScore_B"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:text="+1 Goal"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/score_foul_B"
+                        android:layout_marginLeft="12dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneFoul_B"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="24dp"
+                        android:background="#058900"
+                        android:textColor="#eee"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"
+                        android:text="+1 Foul"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/score_throw_B"
+                        android:layout_marginLeft="12dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneThrow_B"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="24dp"
+                        android:background="#058900"
+                        android:textColor="#eee"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"
+                        android:text="+1 Throw"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/score_penalty_B"
+                        android:layout_marginLeft="12dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOnePenalty_B"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="24dp"
+                        android:background="#058900"
+                        android:textColor="#eee"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"
+                        android:text="+1 Penalty"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#d37c7c7c">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reset_pt"
+            android:onClick="resetPoint"
+            android:padding="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="#06ac00"
+            android:textColor="#eee"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp"
+            android:text="Reset"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
