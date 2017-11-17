@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="name_of_team_A">Team A</string>
+    <string name="default_score_of_team_A">0</string>
+    <string name="btn_goal_txt">+1 Goal</string>
+    <string name="btn_foul_txt">+1 Foul</string>
+    <string name="btn_throw_txt">+1 Throw</string>
+    <string name="throw_txt">0</string>
 </resources>

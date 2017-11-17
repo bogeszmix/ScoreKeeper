@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_size_name_of_team_A">18sp</dimen>
+    <dimen name="pad_name_of_team_A">4dp</dimen>
+    <dimen name="marg_top_tam_of_team_A">16dp</dimen>
+    <dimen name="marg_bottom_tam_of_team_A">16dp</dimen>
+    <dimen name="pad_score_of_team_A">4dp</dimen>
+    <dimen name="marg_bottom_score_of_team_A">24dp</dimen>
+    <dimen name="txt_size_score_of_team_A">56sp</dimen>
+    <dimen name="btn_goal_marg_bottom">8dp</dimen>
+    <dimen name="btn_goal_marg_left">24dp</dimen>
+    <dimen name="btn_goal_marg_right">32dp</dimen>
+    <dimen name="btn_goal_txt_size">18sp</dimen>
+    <dimen name="btn_foul_marg_bottom">8dp</dimen>
+    <dimen name="btn_foul_marg_left">24dp</dimen>
+    <dimen name="btn_foul_marg_right">12dp</dimen>
+    <dimen name="other_score_btn_txt_size">18sp</dimen>
+    <dimen name="score_foul_marg_right">12dp</dimen>
+    <dimen name="score_txt_size">18sp</dimen>
+    <dimen name="txt_foul_marg_right">12dp</dimen>
+</resources>

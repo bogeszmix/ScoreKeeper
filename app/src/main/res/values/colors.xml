@@ -6,4 +6,12 @@
     <color name="primary_text_material_dark">#000000</color>
     <color name="text_color_secondary">#000000</color>
     <color name="secondary_text_material_dark">#000000</color>
+    <color name="content_bg_color">#b0b7b7b7</color>
+    <color name="teamA_txt_color">#616161</color>
+    <color name="score_txt_color">#000</color>
+    <color name="btn_goal_bg_color">#f5f5f5</color>
+    <color name="btn_goal_txt_color">#000000</color>
+    <color name="other_score_btn_color">#058900</color>
+    <color name="other_score_btn_txt_color">#eee</color>
+    <color name="throw_txt_color">#000000</color>
 </resources>
